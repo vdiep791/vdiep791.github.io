@@ -12,13 +12,81 @@
     <body> 
 
         <div class="header">
-            <h1>Example Student's Assignment 1!</h1>
-            <p>
-            <img src="red-panda.jpg" width=400></a>
+            <h1>Assignment 1 - My First Rhino Model</h1>
+			<p> For assignment 1, my goal was to create "cookie cutters" from images I found. </p>
+			<p> Below are the steps I took to create the 3d models</p>
+			<h4> Step 1 - Find images </h4>
+			<p> For step 1 I found images of a turtle, a dog, and the millenium falcon</p>
+			<h4> Step 2 - Cleanup the images in Photoshop </h4>
+			<p> With Step 2 I went through a process with each of the images </p>
+			<p><ul>
+			<li>Desaturate the image to just black and white</li>
+			<li>Adjust the input levels of the image to make the outline stand out more cleanly</li>
+			<li>Adjust the threshold levels as needed</li>
+			<li>Add a blur filter</li>
+			<li>Clean up the image as needed with a brush tool. You want a very clear distinction between the image and the background</li>
+			</ul>
+			</p>
+			<h4>Step 3 - Create the outline in Illustrator</h4>
+			<p>
+			<ul>
+			<li>Copy the image from photoshop into illustrator</li>
+			<li>Click object > image trace to create the vectors</li>
+			<li>Select the stroke to be black</li>
+			<li>Select the fill to be transparent</li>
+			<li>use the group selection tool (cursor with a plus) to remove unneeded lines</li>
+			<li>export the file as a DXF, changing the scale to ensure 1 inch is 1 unit </li>
+			</ul>
+			</p>
+			<h4>Step 4 - Create the 3D model in Rhino</h4>
+			<p>
+			<ul>
+			<li>:Import: the DXF file into rhino, ensuring the model units and layout units are correct, and Convert regions to curves is checked </li>
+			<li>If you do not see the outline you created on the grid zoom out and look for it.</li>
+			<li>If you still do not see it, go to edit>block manager>properties and link the dxf file. </li>
+			<li>:Insert: the block if needed</li>
+			<li>:Explode: to get the curve</li>
+			<li>:Offset: the curve so you have 2 curves, offset by.125 in minimum</li>
+			<li>:ExtrudeCrv: ensuring that :Solid: is checked yes </li>
+			<li>Repeat the steps above to add a lip if desired</li>
+			<li>:BooleanUnion: to ensure the object is one surface. 
+			<li>now :Export: the object as an STL
+			</ul>
+			</p>
+		<p>
+            Below you can see some in progress picks of my 3D models!
             </p>
-            <p>
-            Here is all the documentation for assignment 1!
+			</br>
+			<p>
+			 1.<img src="assignment1/step1.jpg" width=400></a>
+			  2.<img src="assignment1/step2.jpg" width=400></a>
+			   3.<img src="assignment1/step3.jpg" width=400></a>
+			    4.<img src="assignment1/Step4.jpg" width=400></a></br>
+				 5.<img src="assignment1/step5.jpg" width=400></a>
+				 6.<img src="assignment1/step6.jpg" width=400></a>
+				  7.<img src="assignment1/step7.jpg" width=400></a>
+				   8.<img src="assignment1/step8.jpg" width=400></a>
+			   </p>
+			   	<p>Below are the starting and ending results for each image</p>
+			<h4>Turtle</h4>
+			<p>
+            <img src="assignment1/turtle.jpg" width=400></a>
+			 <img src="assignment1/turtle1.jpg" width=400></a>
+			</p>
+						<h4>Dog</h4><p>
+            <img src="assignment1/corgi.jpg" width=400></a>
+			 <img src="assignment1/corgi1.jpg" width=400></a>
+			</p>
+						<h4>Millenium Falcon</h4><p>
+            <img src="assignment1/milleniumfalcon.jpg" width=400></a>
+			 <img src="assignment1/falcon3d.jpg" width=400></a>
+			</p>
             </p>
+            		<h4>3D models full view</h4>	<p>
+            <img src="assignment1/tfull.jpg" width=400></a>
+			  <img src="assignment1/corgif.jpg" width=400></a>
+			    <img src="assignment1/mfull.jpg" width=400></a>
+			</p>
         </div>
         
     </body>

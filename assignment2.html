@@ -4,7 +4,7 @@
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
-        <title>Example Student's HCDE 439 Physical Computing Page!</title> 
+        <title>Assignment 2 - Getting started with 3D printing</title> 
 
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
 
@@ -12,13 +12,138 @@
     <body> 
 
         <div class="header">
-            <h1>Example Student's Assignment 2!</h1>
-            <p>
-            <img src="red-panda.jpg" width=400></a>
+            <h1>Assignment 2 - Getting Started with 3D printing</h1>
+			<p> Assignment 2 was a 2 part assignment, Assembling the 3D Printer, and Calibrating it. </p>
+			<h3> Assembling the 3D Printer</h3>
+			<img src="red-panda.jpg" width=400></a>
+			<p>Since I had already assembled my printer before starting the Assignment, I'll talk about some intresting experiences I had with the Process.</p>
+			<h4>Binding on the Z Axis</p>
+			<ul>
+			<li>My 3D printer did not want to move in the Z axis</li>
+			<li>To troubleshoot this I had to take apart and reassemble the Z-Rod Assembly multiple times</li>
+			<li>I think in the end what made it work was loosening the screws by the Extruder assemlby.</li>
+			</ul>
+			<h4>Leveling the Bed</h4>
+			<p>First I tightened the wheels all the way</P>
+			<p>Then I used this bedleveling test from thingiverse - <a href="https://www.thingiverse.com/thing:2987803"> Ender 3 Level Test</a></p>
+			<p>It took several tries to get it working, even then the axis's were still off and I am trying to calibrate it more closely still. </p>
+			
+			<h3>Calibration Prints</h3>
+			<p>We then needed to print each of the following, and track the measurements and Time for each print. 
+			<ul>
+			<li>A 2cm cube with the standard "low quality" settings and a brim</li>
+			<ul>
+			<li> Time: 25m</li>
+			<li> Y Axis: 19.54mm</li>
+			<li> X Axis: 20.20mm</li>
+			<li> Z Axis 20.00mm</li>
+			</ul>
+<li>A 2cm cube with the standard "standard quality" settings and a brim</li>
+<ul>
+			<li> Time: 32m 11s</li>
+			<li> Y Axis: 19.40mm</li>
+			<li> X Axis: 20.20mm</li>
+			<li> Z Axis 19.90mm</li>
+			</ul>
+<li>A 2cm cube with the standard "high quality" settings and a brim</li>
+<ul>
+			<li> Time: 51m 52s</li>
+			<li> Y Axis: 19.44mm</li>
+			<li> X Axis: 20.0mm</li>
+			<li> Z Axis 19.94mm</li>
+			</ul>
+<li>A 2cm cube with a concentric top and bottom layer</li>
+<ul>
+			<li> Time: 34m 23s</li>
+			<li> Y Axis: 19.45mm</li>
+			<li> X Axis: 20.10mm</li>
+			<li> Z Axis 19.91mm</li>
+			</ul>
+<li>A tube 2cm in diameter and .5cm high with a single extrusion wall thickness</li>
+<ul>
+			<li> Time: 6m 13s</li>
+			<li> Y Axis: 19.23mm</li>
+			<li> Interior Y Axis: 18.21mm</li>
+			<li> X Axis: 20.20mm</li>
+			<li> Interior X Axis: 18.64mm</li>
+			<li> Z Axis 4.87mm</li>
+			</ul>
+<li>A tube 2cm in diameter and .5cm high with a double extrusion wall thickness and random z-seam alignment</li>
+<ul>
+			<li> Time: 7m 33s</li>
+			<li> Y Axis: 19.50mm</li>
+			<li> Interior Y Axis: 17.92mm</li>
+			<li> X Axis 20.32mm</li>
+			<li> Interior X Axis: 18.65mm</li>
+			<li> Z Axis 4.81mm</li>
+			</ul>
+<li>A cylinder 2cm in diameter exported with a 0.1cm tolerance, printed on its round side with supports</li>
+<ul>
+			<li> Time: 19m26s</li>
+			<li> Y Axis: 4.74</li>
+			<li> X Axis: 20.12mm</li>
+			<li> Z Axis 19.92mm</li>
+			</ul>
+<li>A cylinder 2cm in in diameter exported with a 0.005cm tolerance</li>
+		<ul>
+			<li> Time: 21m 57s</li>
+			<li> Y Axis: 5.10mm</li>
+			<li> X Axis: 19.42mm</li>
+			<li> Z Axis 19.82mm</li>
+			</ul>
+<p>Finally, A 20.0mm +/- 0.5mm cube with a 5.0mm +/- 0.5mm hole through it.</p>
+<li>Attempt 1</li>
+		<ul>
+			<li> Time 1h 2m 35s</li>
+			<li> Y Axis: 19.37mm</li>
+			<li> X Axis: 19.95mm</li>
+			<li> Z Axis 19.82mm</li>
+			<li> Hole Diameter 9.75mm x 9.25mm oopsies, it should be 5mm</li>
+			</ul>
+<li>Attempt 2 after recalibrating the bed </li>
+<ul>
+			<li> Time 1h 3m 38s</li>
+			<li> Y Axis: 19.53mm</li>
+			<li> X Axis: 19.92mm</li>
+			<li> Z Axis 19.82mm</li>
+			<li> Hole Diameter 9.23mm x 9.93mm oopsies, it should be 5mm</li>
+			</ul>
+			
+			<li>Attempt 3 after adjusting the stl </li>
+<ul>
+			<li> Time 36m 20s</li>
+			<li> Y Axis: 19.54mm</li>
+			<li> X Axis: 20.06mm</li>
+			<li> Z Axis 19.95mm</li>
+			<li> Hole Diameter 4.86mm x 4.56mm</li>
+			<li>Within Requested tolerance, but still looking wonky. Will need to do more calibrating</li>
+			</ul>
+			</ul>
             </p>
             <p>
-            Here is all the documentation for assignment 2!
+           Below are all the pics for assignment 2!
             </p>
+						<h4>Printer</h4>
+			<p>
+            <img src="assignment2/3DPrinterAssembly.jpg" width=400></a>
+			<img src="assignment2/zrodscrew.jpg" width=400></a>
+			</p
+						<h4>Cubes</h4>
+			<p>
+            <img src="assignment2/CubeSideProfile.jpg" width=400></a>
+			 <img src="assignment2/CubeTopProfile.jpg" width=400></a>
+			</p
+						<h4>Cylinders and Tubes</h4>
+			<p>
+            <img src="assignment2/CylinderSideProfile.jpg" width=400></a>
+			 <img src="assignment2/CylinderTopProfile.jpg" width=400></a>
+			</p
+			
+						<h4>Cubeholes</h4>
+			<p>
+            <img src="assignment2/CubeHoleSideProfile.jpg" width=400></a>
+			 <img src="assignment2/CubeHoleTopProfile.jpg" width=400></a>
+			</p
         </div>
         
     </body>
